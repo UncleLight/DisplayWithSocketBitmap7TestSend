@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="light_mode">
+        <item>自动</item>
+        <item>光照</item>
+        <item>阴天</item>
+        <item>办公室</item>
+        <item>家里</item>
+    </string-array>
+
+    <string-array name="special_effect">
+        <item>复古</item>
+        <item>偏蓝</item>
+        <item>偏绿</item>
+        <item>偏红</item>
+        <item>黑白</item>
+        <item>反相</item>
+        <item>黑白反相</item>
+        <item>正常</item>
+    </string-array>
+    
+    <string-array name="brightness">
+        <item>亮度+0</item>
+        <item>亮度+1</item>
+        <item>亮度+2</item>
+        <!--<item>brightness-1</item>-->
+        <!--<item>brightness-2</item>-->
+    </string-array>
+    
+    <string-array name="black_white_mode">
+        <item>B_and_W</item>
+        <item>Negative</item>
+        <item>B_and_W negative</item>
+        <item>Normal</item>
+    </string-array>
+
+    <string-array name="color_effects">
+        <item>Antique</item>
+        <item>Bluish</item>
+        <item>Greenish</item>
+        <item>Reddish</item>
+    </string-array>
+
+    <string-array name="contrast">
+        <item>对比度-2</item>
+        <item>对比度-1</item>
+        <item>对比度+0</item>
+        <item>对比度+1</item>
+        <item>对比度+2</item>
+    </string-array>
+
+    <string-array name="Auto_Exposure">
+        <item>曝光_0</item>
+        <item>曝光_1</item>
+        <item>曝光_2</item>
+        <item>曝光_3</item>
+        <item>曝光_4</item>
+    </string-array>
+
+    <string-array name="resolution_ratio">
+        <item>高分辨率</item>
+        <item>低分辨率</item>
+    </string-array>
+</resources>

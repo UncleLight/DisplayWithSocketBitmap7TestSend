@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:br="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.displaywithsocketbitmap7testsend.MainActivity">
+
+    <com.example.administrator.displaywithsocketbitmap7testsend.BorderRelativeLayout
+        android:id="@+id/brl"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="25dp"
+        app:layout_heightPercent="60%"
+        app:layout_widthPercent="80%"
+        br:borderColor="#000000"
+        br:borderStrokeWidth="9.0"
+        br:needLeftAndRigtBorder="true">
+
+
+    </com.example.administrator.displaywithsocketbitmap7testsend.BorderRelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_magnification_times"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_widthPercent="15%"
+        android:text="x1.0"
+        android:textSize="18dp"/>
+
+    <com.example.administrator.displaywithsocketbitmap7testsend.VerticalSeekBar
+        android:id="@+id/vsb"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        app:layout_heightPercent="40%"
+        app:layout_widthPercent="9%"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/brl" />
+
+    <EditText
+        android:id="@+id/et_ip"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/brl"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:hint="ip"
+        android:text="192.168.1.101" />
+
+
+    <Spinner
+        android:id="@+id/sp_camera_parameter1"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        app:layout_widthPercent="48%"
+        android:layout_below="@+id/et_ip"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/sp_camera_parameter2"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/sp_camera_parameter1"
+        android:layout_below="@+id/et_ip"
+        app:layout_widthPercent="48%" />
+
+    <Spinner
+        android:id="@+id/sp_camera_parameter3"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        app:layout_widthPercent="48%"
+        android:layout_below="@+id/sp_camera_parameter1" />
+
+    <Spinner
+        android:id="@+id/sp_camera_parameter4"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/sp_camera_parameter2"
+        android:layout_toRightOf="@+id/sp_camera_parameter3"
+        app:layout_widthPercent="48%" />
+
+    <EditText
+        android:id="@+id/et_port"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/et_ip"
+        android:layout_alignBottom="@+id/et_ip"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="0dp"
+        android:hint="port"
+        android:text="20000" />
+
+    <Button
+        android:id="@+id/bt_takePicture"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:text="take picture"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/bt_connect"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:text="Connect"
+        android:textSize="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/bt_send"
+        android:layout_height="40dp"
+        android:layout_width="100dp"
+        android:layout_toRightOf="@+id/bt_takePicture"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="send"
+        android:textSize="12dp" />
+
+</android.support.percent.PercentRelativeLayout>
